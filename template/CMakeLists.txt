@@ -6,8 +6,13 @@ project (CMAKE_TEMPLATE)
 
 set(CMAKE_MACOSX_RPATH 1)
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_SUPPRESS_REGENERATION true)
 
-# Add sub projects
-add_subdirectory(external)
+# External projects
+add_subdirectory(external/lest)
+
+# Our Targets
 add_subdirectory(source)
+
+# Add Tests
 add_subdirectory(test)
