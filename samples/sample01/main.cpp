@@ -3,5 +3,5 @@
 
 int main(int argc, char * argv[])
 {
-    std::cout << "Samples" << std::endl;
+    std::cout << "Sample01" << std::endl;
 }

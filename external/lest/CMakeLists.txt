@@ -13,6 +13,4 @@ ExternalProject_Add(lest
 
 ExternalProject_Get_Property(lest install_dir)
 
-set(LEST_INCLUDE ${install_dir}/src)
-
-message("-- + LEST")
+set(LEST_INCLUDE ${install_dir}/src/lest/include/lest CACHE INTERNAL "")

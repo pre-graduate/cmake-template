@@ -5,10 +5,9 @@ using namespace std;
 
 const lest::test specification[] =
 {
-    CASE("Empty string has length zero (succeed)")
+    CASE("Basic Zero Test")
     {
-        EXPECT( 0 == string(  ).length() );
-        EXPECT( 0 == string("").length() );
+        EXPECT(0 == 0);
     }
 };
 
