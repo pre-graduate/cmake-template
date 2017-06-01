@@ -11,4 +11,5 @@ Personal template for cmake based C++ projects. Sets a layout which forces a goo
 mkdir build 
 cd build
 cmake ../
+cmake --build .
 ```
