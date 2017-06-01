@@ -1,8 +1,8 @@
 include (ExternalProject)
 
-option(LEST_BUILD_TEST "Build tests for lest" OFF)
-option(LEST_BUILD_EXAMPLE "Build examples" OFF)
-option(LEST_BUILD_CONTRIB "Build contrib" OFF)
+set(LEST_BUILD_TEST OFF CACHE BOOL "" FORCE)
+set(LEST_BUILD_EXAMPLE OFF CACHE BOOL "" FORCE)
+set(LEST_BUILD_CONTRIB OFF CACHE BOOL "" FORCE)
 
 ExternalProject_Add(lest
     PREFIX ${CMAKE_CURRENT_BINARY_DIR}/lest 
@@ -12,5 +12,6 @@ ExternalProject_Add(lest
 )
 
 ExternalProject_Get_Property(lest install_dir)
+ExternalProject_Get_Property(lest source_dir)
 
-set(LEST_INCLUDE ${install_dir}/src/lest/include/lest CACHE INTERNAL "")
+set(LEST_INCLUDE ${source_dir}/include/lest CACHE INTERNAL "")

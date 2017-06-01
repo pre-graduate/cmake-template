@@ -4,4 +4,4 @@
 
 #include <string>
 
-const std::string message = "Hello, World!"
+const std::string message = "Hello, World!";
