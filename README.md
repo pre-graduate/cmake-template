@@ -20,7 +20,7 @@ cmake --build .
 
 Release/Debug depending on your build.
 
-```
+```cmd
 ctest -C Release
 ctest -C Debug
 ```
