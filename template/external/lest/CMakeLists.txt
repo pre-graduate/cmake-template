@@ -1,8 +1,8 @@
 include (ExternalProject)
 
-option( LEST_BUILD_TEST    "Build tests for lest" OFF )
-option( LEST_BUILD_EXAMPLE "Build examples" OFF )
-option( LEST_BUILD_CONTRIB "Build contrib" OFF )
+option(LEST_BUILD_TEST "Build tests for lest" OFF)
+option(LEST_BUILD_EXAMPLE "Build examples" OFF)
+option(LEST_BUILD_CONTRIB "Build contrib" OFF)
 
 ExternalProject_Add(lest
     PREFIX ${CMAKE_CURRENT_BINARY_DIR}/lest 

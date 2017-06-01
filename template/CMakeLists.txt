@@ -5,8 +5,8 @@ cmake_minimum_required (VERSION 3.8)
 project (CMAKE_TEMPLATE)
 
 # Project Options
-set(ENABLE_SAMPLES true)
-set(ENABLE_TESTS true)
+option(ENABLE_SAMPLES "Enable Samples" OFF)
+option(ENABLE_TESTS "Enable Tests" OFF)
 
 set(CMAKE_MACOSX_RPATH 1)
 set(CMAKE_CXX_STANDARD 14)

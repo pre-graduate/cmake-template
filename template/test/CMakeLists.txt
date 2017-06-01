@@ -2,5 +2,5 @@
 include_directories(${LEST_INCLUDE})
 include(CTest)
 
-add_executable(basic-tests basic/basic.cpp)
-add_test(NAME basic-tests COMMAND basic-tests)
+add_executable(test01 test01/main.cpp)
+add_test(NAME test01 COMMAND test01)
