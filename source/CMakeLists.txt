@@ -1,6 +1,4 @@
 
-include(CTest)
-
 include_directories(../include)
 
 set(SOURCE main.cpp)
