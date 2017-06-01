@@ -1,6 +1,8 @@
 
 include_directories(${LEST_INCLUDE})
+include(CTest)
 
-set(SOURCE tests.cpp)
+add_executable(tests tests/tests.cpp)
+add_test(NAME tests COMMAND tests)
 
-add_executable(tests ${SOURCE})
+message("adding tests")
