@@ -12,17 +12,18 @@ This is a personal template for CMake based C++ projects. It sets out a layout w
 Note build directory can be any name you want.
 
 ```cmd
-mkdir build 
-cd build
+mkdir build && cd build
 cmake ../
 cmake --build .
-```
-
-## Testing
-
-Release/Debug depending on your build.
-
-```cmd
 ctest -C Release
 ctest -C Debug
+```
+
+## MacOS/Linux
+
+```cmd
+mkdir build && cd build
+cmake ../
+make
+make test
 ```
